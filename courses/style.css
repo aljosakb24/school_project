@@ -1,0 +1,60 @@
+@import url("../style.css");
+
+.courses-wrapper {
+  padding: 50px;
+  margin: 0;
+  width: 100%;
+  background-image: url("../assets/courses-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9; /* moze i u procentima prozirtnost*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.courses-wrapper-course {
+  border: 5px solid #ef9273;
+  width: 50%;
+  background: #fef9f8;
+  padding: 50px;
+  margin-bottom: 20px;
+  /* min-width i max-width */
+}
+
+.courses-wrapper-course:hover {
+  border-color: #ecc6b9;
+  transition: 0.3 ease;
+  cursor: pointer;
+}
+
+.courses-wrapper-course ul {
+  list-style-type: circle;
+}
+
+.courses-wrapper-course h1 {
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.courses-wrapper-course h3,
+ul,
+p {
+  font-family: "Courier Prime", monospace;
+}
+
+.courses-wrapper-course h3 {
+  text-transform: uppercase;
+}
+
+.advanced-course {
+  order: 3;
+}
+
+.intermediate-course {
+  order: 2;
+}
+.basic-course {
+  order: 1;
+}
